@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;600&family=IBM+Plex+Sans+Thai:wght@400;600&display=swap');
+
+:host(:not([data-theme='dark'])),
+:root:not([data-theme='dark']),
+[data-theme='light'] {
+  --pico-primary: #004999;
+  --pico-primary-background: #004999;
+  --pico-primary-underline: #004a9999;
+  --pico-primary-hover: #0082d9;
+  --pico-primary-hover-background: #0082d9;
+  --pico-primary-focus: #0082d999;
+}
+body {
+  --pico-font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  > footer {
+    margin-top: auto;
+  }
+  @media (min-width: 1024px) {
+    .container {
+      max-width: 750px;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+button,
+summary,
+header,
+footer,
+[role='button'],
+._h {
+  --pico-font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
+.th-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > a {
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+}
+
+.th-nav {
+  details.dropdown[open] > summary + ul {
+    left: unset;
+    right: 0;
+  }
+  summary {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.th-theme {
+  padding-top: 0.5rem;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
